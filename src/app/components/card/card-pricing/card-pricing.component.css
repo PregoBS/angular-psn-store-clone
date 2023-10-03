@@ -1,4 +1,4 @@
-.card-pricing__container{
+.container-main {
 	position: absolute;
 	bottom:0px;
 	left: 0;
@@ -6,29 +6,54 @@
 	flex-direction: column;
 	width: 100%;
 	height: 70px;
+	font-size: 15px;
+	
 	background-color: rgba(0,0,0,0.8);
 	padding: 10px;
 	color: antiquewhite;
 	font-family: Calibri;
 }
 
-.card-pricing__title{
+.container-main .title {
 	margin-bottom: 3px;
 }
 
-.card-pricing__value{
+.container-main .value {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 }
 
-.card-pricing__value__console{
+.container-main .value .console {
 	display: flex;
 	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	font-size: 12px;
 }
 
-.card-pricing__value__console > span{
+.container-main .value .money {
+	white-space: nowrap;
+	font-size: 14px;
+}
+
+.value .console > span {
 	font-weight: bolder;
 	color:aqua;
 	margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+	.container-main {
+		font-size: 12px;
+		height: 50px;
+	}
+
+	.container-main .value .console {
+		font-size: 11px;
+	}
+
+	.container-main .value .money {
+		font-size: 11px;
+	}
 }

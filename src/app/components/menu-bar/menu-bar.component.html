@@ -1,5 +1,5 @@
-<div class="menu-bar__container">
-	<div class="menu-bar__logo">
+<div class="container-main">
+	<div class="logo">
 		<img
 			src="assets/ps-logo.png"
 			alt="playstation logo"
@@ -8,11 +8,9 @@
 			height="32px"
 		>
 	</div>
-	<div class="menu-bar__item">
+	<nav class="item">
 		<ul>
-			<li><a href="#">YOUTUBE</a></li>
-			<li><a href="#">LINKEDIN</a></li>
-			<li><a href="#">GITHUB</a></li>
+			<li *ngFor="let link of links"><a [href]="link.href">{{ link.label }}</a></li>
 		</ul>
-	</div>
+	</nav>
 </div>

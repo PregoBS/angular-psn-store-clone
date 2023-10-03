@@ -1,10 +1,23 @@
-.home__container{
+.container-main {
+	padding: 50px 0;
 	width: 90%;
+	color: black;
+	max-width: 1100px;
 	margin: auto;
-	padding-top: 50px;
-	display: flex;
+}
 
-	justify-content: space-around;
+.container-main .title {
+	text-align: center;
+	padding: 36px 0;
+	font-size: 22px;
+	font-weight: 400;
+}
+
+.container-main .cards {
+	display: flex;
+	gap: 12px;
+
+	justify-content: center;
 	align-items: baseline;
 	flex-wrap: wrap;
 }

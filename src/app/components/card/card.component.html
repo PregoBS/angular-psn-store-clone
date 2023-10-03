@@ -1,10 +1,14 @@
-<a href="#" class="card__container">
-	<img
-		class="card__img"
-		[src]=[gameCover]
-		alt=""
-		srcset=""
-	>
+<a
+	href="#"
+	class="container-main"
+	style="
+		background: url({{gameCover}});
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position-x: center;
+		background-position-y: top;
+	"
+>
 	<app-card-label
 		gameLabel="{{gameLabel}}"
 	>

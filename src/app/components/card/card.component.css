@@ -1,21 +1,28 @@
-.card__container{
+.container-main {
 	position: relative;
-	border:3px solid #3E4357;
 	border-radius: 10px;
-	width: 350px;
-	height: 500px;
+	width: min(max(calc(calc(100vw * 1) / 5), 220px), 260px);
+	height: min(max(calc(calc(calc(100vw * 1) / 4) * 1.25), 344px), 406px);
 
 	display: flex;
 	overflow: hidden;
-	margin-top: 10px;
+	caret-color: transparent;
+	transition: box-shadow .3s;
 }
 
-.card__img{
+.container-main .image {
 	min-width: 100%;
 	min-height: 100%;
-	transition: transform .8s;
+	transition: box-shadow .3s;
 }
 
-.card__img:hover{
-	transform: scale(1.1);
+.container-main:hover{
+	box-shadow: inset 0 0 150px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 768px) {
+	.container-main {
+		width: max(calc(calc(100vw * 1) / 5), 180px);
+		height: max(calc(calc(calc(100vw * 1) / 4) * 1.25), 281px);
+	}
 }
