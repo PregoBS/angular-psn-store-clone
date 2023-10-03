@@ -1,0 +1,76 @@
+.container-main {
+    background-color: var(--footer-bg);
+    color: #FFFFFF;
+    padding: 36px;
+}
+
+.container-main .ps-logo {
+    display: flex;
+    padding-bottom: 36px;
+}
+
+.container-main .ps-rights {
+    font-size: 14px;
+    padding-bottom: 36px;
+    text-align: center;
+}
+
+.container-main .links-columns {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.container-main .links-columns .column {
+    list-style: none;
+    padding-bottom: 36px;
+    padding-left: 6px;
+    width: calc(calc(100vw - 36px) / 3);
+}
+
+.container-main .links-columns .column > li {
+    font-size: 14px;
+    line-height: 34px;
+}
+
+.container-main .links-columns .column > li > a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.container-main .links-columns .column > li > a:hover {
+    color: #249cff;
+}
+
+.container-main .links-columns .column01 {
+    border: 1px solid green;
+}
+
+.bottom-strip {
+    height: 36px;
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bottom-strip .sony-logo {
+    margin: 0 8px;
+    width: 75px;
+
+    background-image: url("https://store.playstation.com/static/lib/shared-nav/2.4.0/assets/fonts/sony_logo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media screen and (max-width: 768px) {
+    .container-main .ps-logo {
+        justify-content: center;
+    }
+
+    .container-main .links-columns {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+}
